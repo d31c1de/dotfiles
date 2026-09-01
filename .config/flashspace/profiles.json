@@ -1,0 +1,288 @@
+{
+  "profiles" : [
+    {
+      "id" : "61288219-1F9E-48B9-94F1-07B42CE28DC0",
+      "name" : "Default",
+      "workspaces" : [
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.valvesoftware.steam",
+              "iconPath" : "/Applications/Steam.app/Contents/Resources/Steam.icns",
+              "name" : "Steam"
+            },
+            {
+              "bundleIdentifier" : "com.blackmagic-design.DaVinciResolve",
+              "iconPath" : "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Resources/Resolve.icns",
+              "name" : "DaVinci Resolve"
+            },
+            {
+              "bundleIdentifier" : "th.co.learn.anywhere",
+              "iconPath" : "/Applications/Learn Anywhere.app/Contents/Resources/icon.icns",
+              "name" : "Learn Anywhere"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+1",
+          "display" : "Built-in Retina Display",
+          "id" : "DE39F959-73C6-43F9-BFC7-9DFCA8C8313B",
+          "name" : "1.main",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+1"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.google.Chrome",
+              "iconPath" : "/Applications/Google Chrome.app/Contents/Resources/app.icns",
+              "name" : "Google Chrome"
+            },
+            {
+              "bundleIdentifier" : "com.vivaldi.Vivaldi",
+              "iconPath" : "/Applications/Vivaldi.app/Contents/Resources/app.icns",
+              "name" : "Vivaldi"
+            },
+            {
+              "bundleIdentifier" : "net.imput.helium",
+              "iconPath" : "/Applications/Helium.app/Contents/Resources/app.icns",
+              "name" : "Helium"
+            },
+            {
+              "bundleIdentifier" : "com.vorssaint.utils",
+              "iconPath" : "/Applications/Vorssaint.app/Contents/Resources/AppIcon.icns",
+              "name" : "Vorssaint"
+            },
+            {
+              "bundleIdentifier" : "com.apple.systempreferences",
+              "iconPath" : "/System/Applications/System Settings.app/Contents/Resources/SystemSettings.icns",
+              "name" : "System Settings"
+            },
+            {
+              "bundleIdentifier" : "com.todoist.mac.Todoist",
+              "iconPath" : "/Applications/Todoist.app/Contents/Resources/icon.icns",
+              "name" : "Todoist"
+            },
+            {
+              "bundleIdentifier" : "com.obsproject.obs-studio",
+              "iconPath" : "/Applications/OBS.app/Contents/Resources/AppIcon.icns",
+              "name" : "OBS Studio"
+            },
+            {
+              "bundleIdentifier" : "app.zen-browser.zen",
+              "iconPath" : "/Applications/Zen.app/Contents/Resources/firefox.icns",
+              "name" : "Zen"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+2",
+          "display" : "Built-in Retina Display",
+          "id" : "676AE685-00E7-4A15-8B95-6843C9667EF4",
+          "name" : "2.browser",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+2",
+          "symbolIconName" : "globe"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.apple.Terminal",
+              "iconPath" : "/System/Applications/Utilities/Terminal.app/Contents/Resources/Terminal.icns",
+              "name" : "Terminal"
+            },
+            {
+              "bundleIdentifier" : "com.apple.dt.Xcode",
+              "iconPath" : "/Applications/Xcode.app/Contents/Resources/Xcode.icns",
+              "name" : "Xcode"
+            },
+            {
+              "bundleIdentifier" : "com.microsoft.VSCode",
+              "iconPath" : "/Applications/Visual Studio Code.app/Contents/Resources/Code.icns",
+              "name" : "Code"
+            },
+            {
+              "bundleIdentifier" : "com.mitchellh.ghostty",
+              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/Ghostty.icns",
+              "name" : "Ghostty"
+            },
+            {
+              "bundleIdentifier" : "dev.zed.Zed",
+              "iconPath" : "/Applications/Zed.app/Contents/Resources/Zed.icns",
+              "name" : "Zed"
+            },
+            {
+              "bundleIdentifier" : "com.google.antigravity",
+              "iconPath" : "/Applications/Antigravity.app/Contents/Resources/icon.icns",
+              "name" : "Antigravity"
+            },
+            {
+              "bundleIdentifier" : "com.todesktop.230313mzl4w4u92",
+              "iconPath" : "/Applications/Cursor.app/Contents/Resources/Cursor.icns",
+              "name" : "Cursor"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+3",
+          "display" : "Built-in Retina Display",
+          "id" : "7913F67A-61C5-4C70-8E74-F42C0E678B9D",
+          "name" : "3.code",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+3",
+          "symbolIconName" : "apple.terminal"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "net.ankiweb.launcher",
+              "iconPath" : "/Applications/Anki.app/Contents/Resources/AppIcon.icns",
+              "name" : "Anki"
+            },
+            {
+              "bundleIdentifier" : "com.duypt.imina",
+              "iconPath" : "/var/folders/9n/sxwww5_j4bl8bp48bvw_csh40000gn/X/2D141673-DBAE-59DB-BAD5-9DF18D469113/d/Wrapper/SlideMenu.app/Contents/Resources/AppIcon.icns",
+              "name" : "iMina"
+            },
+            {
+              "bundleIdentifier" : "org.zotero.zotero",
+              "iconPath" : "/Applications/Zotero.app/Contents/Resources/AppIcon.icns",
+              "name" : "Zotero"
+            },
+            {
+              "bundleIdentifier" : "md.obsidian",
+              "iconPath" : "/Applications/Obsidian.app/Contents/Resources/icon.icns",
+              "name" : "Obsidian"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+4",
+          "display" : "Built-in Retina Display",
+          "id" : "86F67B9E-2D6D-47DE-B84D-402ECC4D6835",
+          "name" : "4.study",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+4",
+          "symbolIconName" : "book.pages"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "jp.naver.line.mac",
+              "iconPath" : "/Applications/LINE.app/Contents/Resources/LINE.icns",
+              "name" : "LINE"
+            },
+            {
+              "bundleIdentifier" : "com.bitwarden.desktop",
+              "iconPath" : "/Applications/Bitwarden.app/Contents/Resources/icon.icns",
+              "name" : "Bitwarden"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+5",
+          "display" : "Built-in Retina Display",
+          "id" : "35218C78-D671-4F58-96AC-AA97B8D4190D",
+          "name" : "5.message",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+5",
+          "symbolIconName" : "text.bubble"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "ai.opencode.desktop",
+              "iconPath" : "/Applications/OpenCode.app/Contents/Resources/icon.icns",
+              "name" : "OpenCode"
+            },
+            {
+              "bundleIdentifier" : "com.google.GeminiMacOS",
+              "iconPath" : "/Applications/Gemini.app/Contents/Resources/AppIcon.icns",
+              "name" : "Gemini"
+            },
+            {
+              "bundleIdentifier" : "com.anthropic.claudefordesktop",
+              "iconPath" : "/Applications/Claude.app/Contents/Resources/electron.icns",
+              "name" : "Claude"
+            },
+            {
+              "bundleIdentifier" : "com.openai.codex",
+              "iconPath" : "/Applications/ChatGPT.app/Contents/Resources/electron.icns",
+              "name" : "ChatGPT"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+a",
+          "display" : "Built-in Retina Display",
+          "id" : "4A61E587-F515-4630-89BB-5F854C950543",
+          "name" : "a.AI",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+a",
+          "symbolIconName" : "sparkles"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.microsoft.Word",
+              "iconPath" : "/Applications/Microsoft Word.app/Contents/Resources/Word_macOS.icns",
+              "name" : "Microsoft Word"
+            },
+            {
+              "bundleIdentifier" : "com.microsoft.Powerpoint",
+              "iconPath" : "/Applications/Microsoft PowerPoint.app/Contents/Resources/Powerpoint_macOS.icns",
+              "name" : "Microsoft PowerPoint"
+            },
+            {
+              "bundleIdentifier" : "com.microsoft.Excel",
+              "iconPath" : "/Applications/Microsoft Excel.app/Contents/Resources/Excel_macOS.icns",
+              "name" : "Microsoft Excel"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+s",
+          "display" : "Built-in Retina Display",
+          "id" : "F8690EC4-2C79-44EA-8B19-DF095D65A0BD",
+          "name" : "s.microsoft",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+s",
+          "symbolIconName" : "document"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.apple.finder",
+              "iconPath" : "/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns",
+              "name" : "Finder"
+            },
+            {
+              "bundleIdentifier" : "com.apple.Preview",
+              "iconPath" : "/System/Applications/Preview.app/Contents/Resources/AppIcon.icns",
+              "name" : "Preview"
+            },
+            {
+              "bundleIdentifier" : "com.apple.TextEdit",
+              "iconPath" : "/System/Applications/TextEdit.app/Contents/Resources/AppIcon.icns",
+              "name" : "TextEdit"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+d",
+          "display" : "Built-in Retina Display",
+          "id" : "5A6F2977-250C-4E48-89E6-2D2B631BC30E",
+          "name" : "d.finder",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+d",
+          "symbolIconName" : "folder"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.github.wez.wezterm",
+              "iconPath" : "/Applications/WezTerm.app/Contents/Resources/terminal.icns",
+              "name" : "WezTerm"
+            },
+            {
+              "bundleIdentifier" : "com.apple.Terminal",
+              "iconPath" : "/System/Applications/Utilities/Terminal.app/Contents/Resources/Terminal.icns",
+              "name" : "Terminal"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+6",
+          "display" : "Built-in Retina Display",
+          "id" : "81A2100C-1CE5-4554-889A-4AB8E24531EE",
+          "name" : "6.terminal",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+6",
+          "symbolIconName" : "apple.terminal"
+        }
+      ]
+    }
+  ]
+}

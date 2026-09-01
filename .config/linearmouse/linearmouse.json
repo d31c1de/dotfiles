@@ -1,0 +1,268 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.2",
+  "schemes" : [
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x1115",
+          "productName" : "ATK A9 Plus Nearlink",
+          "serialNumber" : "20241127",
+          "vendorID" : "0x373b"
+        }
+      },
+      "pointer" : {
+        "acceleration" : "unset",
+        "disableAcceleration" : true,
+        "redirectsToScroll" : false,
+        "speed" : "unset"
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "horizontal" : 1,
+          "vertical" : 0.8
+        },
+        "distance" : "auto",
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "zoom"
+            }
+          }
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "horizontal" : 0,
+          "vertical" : 10
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x1115",
+          "productName" : "ATK A9 Plus Nearlink",
+          "serialNumber" : "Љ",
+          "vendorID" : "0x373b"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x2510",
+          "productName" : "USB Optical Mouse",
+          "vendorID" : "0x93a"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.8,
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xaa22",
+          "productName" : "Iwachi M5",
+          "vendorID" : "0x1235"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 0.5
+        },
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "zoom"
+            }
+          }
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 10
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd029",
+          "productName" : "Keychron Link-KM",
+          "vendorID" : "0x3434"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "acceleration" : 1,
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "pinchZoom"
+            }
+          }
+        },
+        "reverse" : true,
+        "speed" : {
+          "horizontal" : 20,
+          "vertical" : 10
+        }
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.blackmagic-design.DaVinciResolve",
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd029",
+          "productName" : "Keychron Link-KM",
+          "vendorID" : "0x3434"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "preventDefault"
+            }
+          }
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd064",
+          "productName" : "Keychron M6",
+          "serialNumber" : "1234567890",
+          "vendorID" : "0x3434"
+        }
+      },
+      "pointer" : {
+        "acceleration" : "unset",
+        "disableAcceleration" : true,
+        "redirectsToScroll" : false,
+        "speed" : "unset"
+      },
+      "scrolling" : {
+        "acceleration" : 1,
+        "distance" : "auto",
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "pinchZoom"
+            }
+          }
+        },
+        "reverse" : true,
+        "speed" : 10
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.blackmagic-design.DaVinciResolve",
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd064",
+          "productName" : "Keychron M6",
+          "serialNumber" : "1234567890",
+          "vendorID" : "0x3434"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "preventDefault"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd064",
+          "productName" : "Keychron M6",
+          "vendorID" : "0x3434"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "horizontal" : {
+            "command" : {
+              "type" : "auto"
+            }
+          },
+          "vertical" : {
+            "command" : {
+              "type" : "pinchZoom"
+            }
+          }
+        },
+        "reverse" : true,
+        "speed" : 10
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.blackmagic-design.DaVinciResolve",
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xd064",
+          "productName" : "Keychron M6",
+          "vendorID" : "0x3434"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "command" : {
+            "type" : "auto"
+          }
+        }
+      }
+    }
+  ]
+}

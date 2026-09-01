@@ -1,0 +1,33 @@
+
+-- -- keybinds
+-- local function tmux_key(key)
+-- 	return act.Multiple({
+-- 		act.SendKey({ key = "Space", mods = "CTRL" }),
+-- 		act.SendKey({ key = key }),
+-- 	})
+-- end
+--
+-- config.keys = {
+-- 	{ key = "t", mods = "CMD", action = tmux_key("c") },
+-- 	{ key = "w", mods = "CMD", action = tmux_key("&") },
+-- 	{
+-- 		key = "n",
+-- 		mods = "CMD",
+-- 		action = act.SpawnCommandInNewWindow({
+-- 			args = {
+-- 				"/bin/zsh",
+-- 				"-c",
+-- 				"/opt/homebrew/bin/tmux new-session",
+-- 			},
+-- 		}),
+-- 	},
+-- }
+--
+-- -- Add Cmd+1 through Cmd+9
+-- for i = 1, 9 do
+-- 	table.insert(config.keys, {
+-- 		key = tostring(i),
+-- 		mods = "CMD",
+-- 		action = tmux_key(tostring(i)),
+-- 	})
+-- end

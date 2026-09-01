@@ -1,0 +1,117 @@
+{
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "toolbar": {
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "scrollbar": {
+    "axes": {
+      "vertical": true,
+      "horizontal": true
+    },
+    "diagnostics": "all",
+    "cursors": true,
+    "search_results": true,
+    "git_diff": true,
+    "show": "auto"
+  },
+  "relative_line_numbers": "disabled",
+  "minimap": {
+    "thumb_border": "left_open",
+    "thumb": "always",
+    "show": "always"
+  },
+  "which_key": {
+    "delay_ms": 100,
+    "enabled": true
+  },
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "cli_default_open_behavior": "existing_window",
+  "format_on_save": "on",
+  "cursor_blink": false,
+  "ui_font_family": "Bai Jamjuree",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+  },
+  "vim_mode": true,
+  "icon_theme": "Soft Charmed Icons",
+  "theme": "Catppuccin Mocha",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "terminal_init_command": "",
+    "sidebar_side": "right",
+    "default_profile": "minimal",
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "experimental.theme_overrides": {
+    "players": [
+      {
+        "cursor": "#CDD6F4",
+      },
+    ],
+  },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        // Enable ty, disable basedpyright, and enable all
+        // other registered language servers (ruff, pylsp, pyright).
+        "!pyright",
+        "basedpyright",
+        "...",
+      ],
+    },
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "off",
+        },
+      },
+    },
+    "tinymist": {
+      "initialization_options": {
+        // Enable background preview
+        // Server will be running on 127.0.0.1:23635
+        "preview": {
+          "background": {
+            "enabled": true,
+          },
+        },
+      },
+      "settings": {
+        // Compile on save
+        // This will compile a PDF for the `main.typ` file in the project root.
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name",
+
+        // Enable formatter
+        "formatterMode": "typstyle",
+      },
+    },
+  },
+}
