@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search vscode npm tmux)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search vscode npm tmux fzf)
 ZSH_TMUX_AUTOSTART=false
 # # Autostart tmux only in WezTerm
 # if [ "$TERM_PROGRAM" = "WezTerm" ] && [ -z "$TMUX" ]; then
@@ -131,7 +131,11 @@ function y() {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# zoxide
 eval "$(zoxide init zsh --cmd cd)"
+
+# fzf
+eval "$(fzf --zsh)"
 
 # Additional Path
 export PATH="$HOME/.local/bin:$PATH"
@@ -150,5 +154,5 @@ alias start-komorebi="komorebic enable-autostart; brew services start borders; s
 alias stop-komorebi="komorebic disable-autostart; brew services stop borders; skhd --stop-service"
 alias opencode="opencode --port"
 alias http-server="npx http-server"
-alias nlazy="NVIM_APPNAME=nvim-lazy nvim"
-alias klazy="NVIM_APPNAME=nvim-kickstart nvim"
+alias lnvim="NVIM_APPNAME=nvim-lazy nvim"
+alias knvim="NVIM_APPNAME=nvim-kickstart nvim"
