@@ -18,7 +18,7 @@ config.window_close_confirmation = "NeverPrompt"
 config.window_decorations = "RESIZE"
 
 -- appearance
-config.default_cursor_style = "SteadyBlock"
+-- config.default_cursor_style = "SteadyBlock"
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 19
 config.color_scheme = "Catppuccin Mocha (Gogh)"
