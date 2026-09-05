@@ -1,5 +1,9 @@
+-- lua/plugins/which-key.lua
+-- Popup listing available keymaps as you type a prefix (<leader>).
+-- `spec` documents the group names; the [S]earch / [T]oggle prefixes must
+-- match the `desc`s used in the actual keymaps (keymaps.lua, autocmds.lua).
 return {
- {
+  {
     'folke/which-key.nvim',
     event = 'VeryLazy',
     opts = {

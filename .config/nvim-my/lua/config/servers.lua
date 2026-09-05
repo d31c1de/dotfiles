@@ -1,4 +1,8 @@
 -- lua/config/servers.lua
+-- LSP servers: the single source of truth.
+-- Add a server here and restart: mason-tool-installer auto-installs it
+-- (reads this table) and nvim-lspconfig auto-configures + enables it.
+-- Comment a server out (or `enabled = false`) to disable it.
 return {
   -- clangd = {},
   -- gopls = {},

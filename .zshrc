@@ -154,5 +154,3 @@ alias start-komorebi="komorebic enable-autostart; brew services start borders; s
 alias stop-komorebi="komorebic disable-autostart; brew services stop borders; skhd --stop-service"
 alias opencode="opencode --port"
 alias http-server="npx http-server"
-alias lnvim="NVIM_APPNAME=nvim-lazy nvim"
-alias knvim="NVIM_APPNAME=nvim-kickstart nvim"

@@ -106,6 +106,7 @@ end)
 -- Finally, return the configuration to wezterm:
 config.keys = require("keybinds").keys
 config.key_tables = require("keybinds").key_tables
+-- table.insert(config.keys, require("smart-splipt").keys)
 -- local tabline = require("tabline")
 -- tabline.apply_to_config(config)
 return config

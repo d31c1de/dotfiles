@@ -98,11 +98,6 @@
               "name" : "Code"
             },
             {
-              "bundleIdentifier" : "com.mitchellh.ghostty",
-              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/Ghostty.icns",
-              "name" : "Ghostty"
-            },
-            {
               "bundleIdentifier" : "dev.zed.Zed",
               "iconPath" : "/Applications/Zed.app/Contents/Resources/Zed.icns",
               "name" : "Zed"
@@ -272,6 +267,11 @@
               "bundleIdentifier" : "com.apple.Terminal",
               "iconPath" : "/System/Applications/Utilities/Terminal.app/Contents/Resources/Terminal.icns",
               "name" : "Terminal"
+            },
+            {
+              "bundleIdentifier" : "com.mitchellh.ghostty",
+              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/Ghostty.icns",
+              "name" : "Ghostty"
             }
           ],
           "assignAppShortcut" : "opt+shift+6",

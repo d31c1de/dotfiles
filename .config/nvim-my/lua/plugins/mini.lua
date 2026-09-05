@@ -1,4 +1,9 @@
 -- lua/plugins/mini.lua
+-- mini.nvim modules used here:
+--   mini.ai       — around/inside textobjects (va), aa/ii extensions)
+--   mini.surround — add/delete/replace surrounding brackets (sa", ds", sr")
+--   mini.pairs    — auto-close brackets while typing
+-- Uses `config` (not `opts`) because several modules need their own setup.
 return {
   'nvim-mini/mini.nvim',
   config = function()
@@ -17,9 +22,6 @@ return {
 
     require('mini.surround').setup()
 
-    local statusline = require 'mini.statusline'
-    statusline.setup { use_icons = vim.g.have_nerd_font }
-    ---@diagnostic disable-next-line: duplicate-set-field
-    statusline.section_location = function() return '%2l:%-2v' end
+    require('mini.pairs').setup()
   end,
 }

@@ -1,3 +1,6 @@
+-- lua/plugins/telescope.lua
+-- Fuzzy finder (files, buffers, grep, LSP pickers, ...).
+-- Lazy-loaded on the <leader>s* keymaps below; loads on first keypress.
 return {
   'nvim-telescope/telescope.nvim',
   keys = {
@@ -14,11 +17,7 @@ return {
     { '<leader><leader>', '<cmd>Telescope buffers<CR>', desc = '[ ] Find existing buffers' },
     {
       '<leader>/',
-      function()
-        require('telescope.builtin').current_buffer_fuzzy_find(
-          require('telescope.themes').get_dropdown { winblend = 10, previewer = false }
-        )
-      end,
+      function() require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown { winblend = 10, previewer = false }) end,
       desc = '[/] Fuzzily search in current buffer',
     },
     {
@@ -33,9 +32,7 @@ return {
     },
     {
       '<leader>sn',
-      function()
-        require('telescope.builtin').find_files { cwd = vim.fn.stdpath 'config', follow = true }
-      end,
+      function() require('telescope.builtin').find_files { cwd = vim.fn.stdpath 'config', follow = true } end,
       desc = '[S]earch [N]eovim files',
     },
   },
@@ -48,11 +45,15 @@ return {
       enabled = vim.fn.executable 'make' == 1,
     },
   },
-  opts ={
+  -- NOTE: opts must be a function. A plain table would evaluate the
+  -- require() below at startup (before telescope is loaded) and crash nvim.
+  opts = function()
+    return {
       extensions = {
         ['ui-select'] = { require('telescope.themes').get_dropdown() },
       },
-    },
+    }
+  end,
   config = function(_, opts)
     require('telescope').setup(opts)
     pcall(require('telescope').load_extension, 'fzf')

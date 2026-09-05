@@ -1,6 +1,8 @@
--- lua/plugins/mason.lua
 return {
-  'mason-org/mason.nvim',
-  build = ':MasonUpdate',
-  opts = {},
+  "mason-org/mason.nvim",
+  opts = {
+    ui = {
+      border = "rounded",
+    },
+  },
 }
