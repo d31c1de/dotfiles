@@ -1,1 +1,3 @@
 zoxide fzf yazi neovim
+oh my zsh, p10k
+
