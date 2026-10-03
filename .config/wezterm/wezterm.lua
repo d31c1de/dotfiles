@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local smart_splits = wezterm.plugin.require("https://github.com/mrjones2014/smart-splits.nvim")
 local act = wezterm.action
 -- local tabline = require("tabline")
 
@@ -13,19 +14,19 @@ config.automatically_reload_config = true
 config.hide_tab_bar_if_only_one_tab = false
 
 -- leader key: CTRL+SPACE activates the LEADER modifier for 1s
-config.leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 1000 }
+-- config.leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 1000 }
 config.window_close_confirmation = "NeverPrompt"
 config.window_decorations = "RESIZE"
 
 -- appearance
 -- config.default_cursor_style = "SteadyBlock"
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("Maple Mono NF")
 config.font_size = 19
-config.color_scheme = "Catppuccin Mocha (Gogh)"
+config.color_scheme = "Tokyo Night (Gogh)"
 
 -- window setting
 config.window_background_opacity = 0.8
-config.macos_window_background_blur = 40
+config.macos_window_background_blur = 100
 config.window_frame = {
 	inactive_titlebar_bg = "none",
 	active_titlebar_bg = "none",
@@ -103,10 +104,31 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	end
 end)
 
--- Finally, return the configuration to wezterm:
 config.keys = require("keybinds").keys
+-- Finally, return the configuration to wezterm:
 config.key_tables = require("keybinds").key_tables
--- table.insert(config.keys, require("smart-splipt").keys)
+-- table.insert(config.keys, require("smart-split").keys)
 -- local tabline = require("tabline")
 -- tabline.apply_to_config(config)
+
+smart_splits.apply_to_config(config, {
+	-- the default config is here, if you'd like to use the default keys,
+	-- you can omit this configuration table parameter and just use
+	-- smart_splits.apply_to_config(config)
+
+	-- if you want to use separate direction keys for move vs. resize, you
+	-- can also do this:
+	direction_keys = {
+		move = { "h", "j", "k", "l" },
+		resize = { "LeftArrow", "DownArrow", "UpArrow", "RightArrow" },
+	},
+	-- modifier keys to combine with direction_keys
+	modifiers = {
+		move = "CTRL", -- modifier to use for pane movement, e.g. CTRL+h to move left
+		resize = "CTRL", -- modifier to use for pane resize, e.g. META+h to resize to the left
+	},
+	-- log level to use: info, warn, error
+	log_level = "info",
+})
+
 return config

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "shell",
+  "description": "Run shell commands from Raycast",
+  "author": {
+    "name": "asubbotin"
+  },
+  "license": "MIT",
+  "keywords": [
+    "command line",
+    "commandline",
+    "terminal"
+  ]
+}

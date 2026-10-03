@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "media-converter",
+  "description": "This extension converts video, image, and audio files using FFmpeg",
+  "author": {
+    "name": "leandro.maia"
+  },
+  "license": "MIT"
+}

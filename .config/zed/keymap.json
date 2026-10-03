@@ -9,37 +9,64 @@
   {
     "context": "vim_mode == insert",
     "bindings": {
-      "j k": "vim::NormalBefore"
-    }
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "ctrl-u": [
+        "action::Sequence",
+        ["vim::ScrollUp", "editor::ScrollCursorCenter"],
+      ],
+      "ctrl-d": [
+        "action::Sequence",
+        ["vim::ScrollDown", "editor::ScrollCursorCenter"],
+      ],
+      "ctrl-f": [
+        "action::Sequence",
+        ["vim::PageDown", "editor::ScrollCursorCenter"],
+      ],
+      "ctrl-b": [
+        "action::Sequence",
+        ["vim::PageUp", "editor::ScrollCursorCenter"],
+      ],
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-r": ["task::Spawn", { "task_name": "r/python" }]
-    }
+      "cmd-r": ["task::Spawn", { "task_name": "r/python" }],
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-j": "workspace::ToggleRightDock"
-    }
+      "cmd-shift-j": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "Workspace",
     "unbind": {
-      "cmd-r": "workspace::ToggleRightDock"
-    }
+      "cmd-r": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "ProjectSearchBar",
     "unbind": {
-      "cmd-shift-j": "project_search::ToggleFilters"
-    }
+      "cmd-shift-j": "project_search::ToggleFilters",
+    },
   },
   {
     "context": "ProjectSearchView",
     "unbind": {
-      "cmd-shift-j": "project_search::ToggleFilters"
-    }
-  }
+      "cmd-shift-j": "project_search::ToggleFilters",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "terminal_panel::ToggleFocus",
+    },
+  },
 ]

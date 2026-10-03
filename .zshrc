@@ -10,14 +10,16 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search vscode npm fzf)
 
-ZVM_CURSOR_STYLE_ENABLED=true
-
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # zsh-vi-mode
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+ZVM_CURSOR_STYLE_ENABLED=true
+ZVM_VISUAL_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
+ZVM_VI_HIGHLIGHT_FOREGROUND=white             # Color name
+ZVM_VI_HIGHLIGHT_BACKGROUND=#4D4264
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -58,5 +60,4 @@ alias ls="eza --icons=auto --color=auto"
 alias foundry="/Users/taptat/Applications/start-foundry.sh"
 alias start-komorebi="komorebic enable-autostart; brew services start borders; skhd --start-service"
 alias stop-komorebi="komorebic disable-autostart; brew services stop borders; skhd --stop-service"
-alias opencode="opencode --port"
 alias http-server="npx http-server"

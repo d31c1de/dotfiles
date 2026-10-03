@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "todoist",
+  "description": "Check your Todoist tasks and quickly create new ones",
+  "author": {
+    "name": "thomaslombart"
+  },
+  "license": "MIT"
+}

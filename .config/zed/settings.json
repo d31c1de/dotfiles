@@ -1,4 +1,18 @@
 {
+  "close_panel_on_toggle": false,
+  "ui_font_size": 15.0,
+  "disable_ai": true,
+  "language_models": {
+    "opencode": {
+      "show_go_models": true,
+      "show_zen_models": true
+    }
+  },
+  "agent_servers": {
+    
+  },
+  "use_system_window_tabs": false,
+  "helix_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true
   },
@@ -25,7 +39,7 @@
   },
   "which_key": {
     "delay_ms": 100,
-    "enabled": true
+    "enabled": false
   },
   "edit_predictions": {
     "provider": "zed"
@@ -34,13 +48,22 @@
   "format_on_save": "on",
   "cursor_blink": false,
   "ui_font_family": "Bai Jamjuree",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "Maple Mono NF",
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
+    "font_family": "Maple Mono NF",
+    "font_size": 15.0,
   },
   "vim_mode": true,
-  "icon_theme": "Soft Charmed Icons",
-  "theme": "Catppuccin Mocha",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Soft Charmed Icons",
+    "dark": "Soft Charmed Icons"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
@@ -56,6 +79,12 @@
     "dock": "left",
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "opencode",
+      "model": "go/deepseek-flash",
+      "enable_thinking": false
+    },
+    "threads_sidebar_default_width": 0.0,
     "terminal_init_command": "",
     "sidebar_side": "right",
     "default_profile": "minimal",

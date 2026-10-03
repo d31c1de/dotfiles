@@ -20,6 +20,11 @@
               "bundleIdentifier" : "th.co.learn.anywhere",
               "iconPath" : "/Applications/Learn Anywhere.app/Contents/Resources/icon.icns",
               "name" : "Learn Anywhere"
+            },
+            {
+              "bundleIdentifier" : "com.apple.TextEdit",
+              "iconPath" : "/System/Applications/TextEdit.app/Contents/Resources/AppIcon.icns",
+              "name" : "TextEdit"
             }
           ],
           "assignAppShortcut" : "opt+shift+1",
@@ -70,6 +75,11 @@
               "bundleIdentifier" : "app.zen-browser.zen",
               "iconPath" : "/Applications/Zen.app/Contents/Resources/firefox.icns",
               "name" : "Zen"
+            },
+            {
+              "bundleIdentifier" : "com.microsoft.rdc.macos",
+              "iconPath" : "/Applications/Windows App.app/Contents/Resources/AppIcon.icns",
+              "name" : "Windows App"
             }
           ],
           "assignAppShortcut" : "opt+shift+2",
@@ -142,6 +152,11 @@
               "bundleIdentifier" : "md.obsidian",
               "iconPath" : "/Applications/Obsidian.app/Contents/Resources/icon.icns",
               "name" : "Obsidian"
+            },
+            {
+              "bundleIdentifier" : "net.ankiweb.anki",
+              "iconPath" : "/Applications/Anki.app/Contents/Resources/AppIcon.icns",
+              "name" : "Anki"
             }
           ],
           "assignAppShortcut" : "opt+shift+4",
@@ -222,12 +237,10 @@
               "name" : "Microsoft Excel"
             }
           ],
-          "assignAppShortcut" : "opt+shift+s",
           "display" : "Built-in Retina Display",
           "id" : "F8690EC4-2C79-44EA-8B19-DF095D65A0BD",
-          "name" : "s.microsoft",
+          "name" : "m.microsoft",
           "openAppsOnActivation" : false,
-          "shortcut" : "opt+s",
           "symbolIconName" : "document"
         },
         {
@@ -241,19 +254,12 @@
               "bundleIdentifier" : "com.apple.Preview",
               "iconPath" : "/System/Applications/Preview.app/Contents/Resources/AppIcon.icns",
               "name" : "Preview"
-            },
-            {
-              "bundleIdentifier" : "com.apple.TextEdit",
-              "iconPath" : "/System/Applications/TextEdit.app/Contents/Resources/AppIcon.icns",
-              "name" : "TextEdit"
             }
           ],
-          "assignAppShortcut" : "opt+shift+d",
           "display" : "Built-in Retina Display",
           "id" : "5A6F2977-250C-4E48-89E6-2D2B631BC30E",
           "name" : "d.finder",
           "openAppsOnActivation" : false,
-          "shortcut" : "opt+d",
           "symbolIconName" : "folder"
         },
         {
@@ -274,12 +280,10 @@
               "name" : "Ghostty"
             }
           ],
-          "assignAppShortcut" : "opt+shift+6",
           "display" : "Built-in Retina Display",
           "id" : "81A2100C-1CE5-4554-889A-4AB8E24531EE",
           "name" : "6.terminal",
           "openAppsOnActivation" : false,
-          "shortcut" : "opt+6",
           "symbolIconName" : "apple.terminal"
         }
       ]
